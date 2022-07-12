@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LeeDanbi Portfolio</title>
+</head>
+<body>
+
+<div id="wrap">
+
+    <div class="page1">
+        <h1>2022<br>
+            Portfolio</h1>
+    </div><!--page1-->
+
+    <div class="page2">
+
+        <div class="item">
+        <div class="con1">
+            <div class="span"></div>
+            <h2>이단비
+                <span>LEE DANBI</span>
+            </h2>
+            <div class="date">1997.03.11</div>
+        </div><!--con1-->
+
+        <div class="con2">
+            <h2>EDUCATION</h2>
+                <h3>부산더조은직업전문학교</h3>
+                <p>멀티미디어(프리미어,에펙,3D모션)앱콘텐츠제작실무자양성_스마트혼합</p>
+
+                <h2>LICENSE</h2>
+                <p> ITQ 아래한글 A등급<br>
+                    GTQ그래픽기술자격 1급<br>
+                    운전면허 2종 보통
+                </p> 
+
+                <h2>SKILLS</h2>
+                <h3>adobe photoshop / illustrator / premiere pro</h3>
+                <p class="min">html / css / javascript</p>
+
+                <h2>CONTACT</h2>
+                <p>sweetrain1142@gmail.com<br>
+                    010.2978.4332
+                </p>
+
+        </div><!--con2-->
+        </div><!--item-->
+
+    </div><!--page2-->
+
+    <div class="page3">
+        <div class="wrap">
+            <h2>1. WebDesign</h2>
+            <div class="con">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="txt txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                <div class="txt txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div><!--con-->
+        </div><!--wrap-->
+
+    </div><!--page3-->
+
+    <div class="page4">
+        <div class="wrap">
+            <h2>2. GraphicDesign</h2>
+            <div class="con">
+                <div class="item">
+                    <img src="images/image01.jpg" alt="바이오더마">
+                </div>
+                <div class="item">
+                    <img src="images/image02.jpg" alt="파지티브호텔">
+                </div>
+                <div class="item">
+                    <img src="images/image03.jpg" alt="그린카">
+                </div>
+                <div class="item">
+                    <img src="images/image04.jpg" alt="ARHEE">
+                </div>
+                <div class="item">
+                    <img src="images/image05.png" alt="음료포스터">
+                </div>
+                <div class="item">
+                    <img src="images/image06.png" alt="아이콘">
+                </div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div><!--con-->
+
+            <span class="s1"></span>
+            <span class="s2"></span>
+            <span class="s3"></span>
+        </div><!--wrap-->
+    </div><!--page4-->
+
+    <div class="page5">
+        <div class="wrap">
+            <h2>3. VideoDesign</h2>
+            <div class="con">
+                <div class="item"></div>
+                <div class="item"></div>
+            </div><!--con-->
+        </div><!--wrap-->
+    </div><!--page5-->
+
+    <div class="page6">
+        <div class="wrap">
+            <address>
+                Mail. sweetrain1142@gmail.com<br>
+                Tel. +82)10 - 2978 - 4332
+            </address>
+            <p class="p1">
+                본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 용도가 아닙니다.<br>
+                사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.
+            </p>
+            <p class="p2">Copyright ©2022 Leedanbi. All rights reserved.</p>
+        </div><!--wrap-->
+    </div><!--page6-->
+</div><!--wrap-->
+    
+<ul class="ctrl">
+    <li class="active">
+        <button></button>
+        <span>Main</span>
+    </li>
+    <li>
+        <button></button>
+        <span>Profile</span>
+    </li>
+    <li>
+        <button></button>
+        <span>WebDesign</span>
+    </li>
+    <li>
+        <button></button>
+        <span>GraphicDesign</span>
+    </li>
+    <li>
+        <button></button>
+        <span>VideoDesign</span>
+    </li>
+    <li>
+        <button></button>
+        <span>End</span>
+    </li>
+</ul>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+
+
+
+$('.ctrl li').on('click',function(){
+
+    let i = $(this).index();
+    let hig = $('#wrap div').height();
+
+    $('html, body').animate({
+        'scrollTop'  : hig*i
+    });
+
+});
+
+
+
+$(window).on('scroll',function(){
+
+    let scr = $(window).scrollTop();
+    let hig = $('.page1').height();
+
+
+    if(scr >= 0 && scr < hig){
+        $('.ctrl li').removeClass().eq(0).addClass('active');
+    }
+
+    if(scr>=hig && scr<hig*2){
+        $('.ctrl li').removeClass().eq(1).addClass('active');
+    }
+
+    if(scr>=hig*2 && scr<hig*3){
+        $('.ctrl li').removeClass().eq(2).addClass('active');
+    }
+
+    if(scr>=hig*3 && scr<hig*4){
+        $('.ctrl li').removeClass().eq(3).addClass('active');
+    }
+
+    if(scr>=hig*4 && scr<hig*5){
+        $('.ctrl li').removeClass().eq(4).addClass('active');
+    }
+
+    if(scr>=hig*5){
+        $('.ctrl li').removeClass().eq(5).addClass('active')
+    }
+});
+
+$('.goDown').on('click',function(){
+
+    $('html,body').scrollTop();
+});
+
+
+
+
+    </script>
+</body>
+</html>
