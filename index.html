@@ -39,7 +39,8 @@
                 </p> 
 
                 <h2>SKILLS</h2>
-                <h3>adobe photoshop / illustrator / premiere pro</h3>
+                <h3>adobe photoshop / illustrator / premiere pro<br>
+                after effect</h3>
                 <p class="min">html / css / javascript</p>
 
                 <h2>CONTACT</h2>
@@ -65,28 +66,38 @@
 
     </div><!--page3-->
 
+    <div class="view">
+        <div class="wrapClose wrapClose1"></div>
+        <button class="btnClose btnClose1">
+            <span></span>
+            <span></span>
+        </button><!--btnClose-->
+        <figure><!--이미지가 출력될 영역--></figure>
+
+    </div><!--view-->
+
     <div class="page4">
         <div class="wrap">
             <h2>2. GraphicDesign</h2>
             <div class="con">
                 <div class="item">
-                    <img src="images/image01.jpg" alt="바이오더마">
-                </div>
+                    <a href="#"><img src="images/image01.jpg" alt="바이오더마">
+                </a></div>
                 <div class="item">
-                    <img src="images/image02.jpg" alt="파지티브호텔">
-                </div>
+                    <a href="#"><img src="images/image02.jpg" alt="파지티브호텔">
+                </a></div>
                 <div class="item">
-                    <img src="images/image03.jpg" alt="그린카">
-                </div>
+                    <a href="#"><img src="images/image03.jpg" alt="그린카">
+                </a></div>
                 <div class="item">
-                    <img src="images/image04.jpg" alt="ARHEE">
-                </div>
+                    <a href="#"><img src="images/image04.jpg" alt="ARHEE">
+                </a></div>
                 <div class="item">
-                    <img src="images/image05.png" alt="음료포스터">
-                </div>
+                    <a href="#"><img src="images/image05.png" alt="음료포스터">
+                </a></div>
                 <div class="item">
-                    <img src="images/image06.png" alt="아이콘">
-                </div>
+                    <a href="#"><img src="images/image06.png" alt="아이콘">
+                </a></div>
                 <div class="item"></div>
                 <div class="item"></div>
                 <div class="item"></div>
@@ -99,17 +110,89 @@
         </div><!--wrap-->
     </div><!--page4-->
 
+
+    <div class="view2">
+        <div class="wrapClose wrapClose2"></div>
+        <button class="btnClose btnClose2">
+            <span></span>
+            <span></span>
+        </button><!--btnClose-->
+        <figure><!--이미지가 출력될 영역--></figure>
+
+    </div><!--view2-->
+
+
     <div class="page5">
         <div class="wrap">
             <h2>3. VideoDesign</h2>
             <div class="con">
-                <div class="item"></div>
-                <div class="item"></div>
+                <div class="vidCard">
+                    <a href="#"><img src="images/video.jpg" alt="비디오"></a>
+                    <span class="vidKey">x7an25yoRz0</span>
+                </div>
+                <div class="vidCard"></div>
             </div><!--con-->
         </div><!--wrap-->
     </div><!--page5-->
 
     <div class="page6">
+        <div class="wrap">
+            <h2>4. Works</h2>
+            <div class="con">
+                <div class="item">
+                    <a href="#"><img src="images/som_0.jpg" alt="웨딩00"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/som_1.jpg" alt="웨딩01"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/som_2.jpg" alt="웨딩02"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/som_3.jpg" alt="웨딩03"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/som_4.jpg" alt="웨딩04"></a>
+                </div>                
+                <div class="item">
+                    <a href="#"><img src="images/som_5.jpg" alt="웨딩05"></a>
+                </div>                
+                <div class="item">
+                    <a href="#"><img src="images/som_6.jpg" alt="웨딩06"></a>
+                </div>                
+                <div class="item">
+                    <a href="#"><img src="images/som_7.jpg" alt="웨딩07"></a>
+                </div>                
+                <div class="item">
+                    <a href="#"><img src="images/som_8.jpg" alt="웨딩08"></a>
+                </div>                
+                <div class="item">
+                    <a href="#"><img src="images/som_9.jpg" alt="웨딩09"></a>
+                </div>                
+                <div class="item">
+                    <a href="#"><img src="images/som_10.jpg" alt="웨딩10"></a>
+                </div>                
+                <div class="item">
+                    <a href="#"><img src="images/som_11.jpg" alt="웨딩11"></a>
+                </div>                
+                <div class="item">
+                    <a href="#"><img src="images/som_12.jpg" alt="웨딩12"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/som_13.jpg" alt="웨딩13"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/som_14.jpg" alt="웨딩14"></a>
+                </div>
+            </div><!--con-->
+
+            <span class="s1"></span>
+            <span class="s2"></span>
+            <span class="s3"></span>
+        </div><!--wrap-->
+    </div><!--page6-->
+
+    <div class="page7">
         <div class="wrap">
             <address>
                 Mail. sweetrain1142@gmail.com<br>
@@ -144,6 +227,10 @@
     <li>
         <button></button>
         <span>VideoDesign</span>
+    </li>
+    <li>
+        <button></button>
+        <span>Works</span>
     </li>
     <li>
         <button></button>
@@ -195,8 +282,16 @@ $(window).on('scroll',function(){
         $('.ctrl li').removeClass().eq(4).addClass('active');
     }
 
-    if(scr>=hig*5){
+    if(scr>=hig*5 && scr<hig*6){
         $('.ctrl li').removeClass().eq(5).addClass('active')
+    }
+
+    if(scr>=hig*6 && scr<hig*7){
+        $('.ctrl li').removeClass().eq(6).addClass('active')
+    }
+
+    if(scr>=hig*7){
+        $('.ctrl li').removeClass().eq(7).addClass('active')
     }
 });
 
@@ -205,6 +300,54 @@ $('.goDown').on('click',function(){
     $('html,body').scrollTop();
 });
 
+$('.page4 .item').on('click',function(e){
+    e.preventDefault();
+
+    $('.view').fadeIn();
+
+    let pic = $(this).html();
+    $('.view figure').html(pic);
+    $('.view figure').width(600);
+
+
+});
+
+$('.vidCard').on('click',function(){
+    let vidKey = $(this).find('.vidKey').text();
+    let url = `<iframe width="1280" height="720" src="https://www.youtube.com/embed/${vidKey}" title="220626 BE THE SUN SEOUL WAVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+
+    $('.view2').fadeIn();
+    $('.view2').find('figure').html(url);
+
+});
+
+$('.btnClose2, .wrapClose2').on('click',function(){
+
+$('.view2').hide();
+
+});
+
+
+$('.page6 .item').on('click',function(e){
+    e.preventDefault();
+    $('.view').fadeIn();
+    
+    let i =$(this).index();
+    let pic = `<img src="images/pic_${i}.jpg">`
+
+    $('.view figure').html(pic);
+    $('.view figure').width(900);
+
+    
+
+});
+
+
+$('.btnClose1, .wrapClose1').on('click',function(){
+
+$('.view').hide();
+
+});
 
 
 
