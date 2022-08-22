@@ -312,7 +312,8 @@ $('.page4 .item').on('click',function(e){
 
 });
 
-$('.vidCard').on('click',function(){
+$('.vidCard').on('click',function(a){
+    a.preventDefault();
     let vidKey = $(this).find('.vidKey').text();
     let url = `<iframe width="1280" height="720" src="https://www.youtube.com/embed/${vidKey}" title="220626 BE THE SUN SEOUL WAVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
